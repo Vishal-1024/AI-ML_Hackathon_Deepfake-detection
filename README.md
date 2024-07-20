@@ -1,5 +1,5 @@
-Deep Fake Detection Django Application
-System Requirements
+*Deep Fake Detection Django Application
+**System Requirements
 
 NVIDIA GPU (required)
 CUDA version 10.0 or higher
@@ -8,7 +8,8 @@ Python 3.6+
 Django 3.0+
 
 For a complete list of dependencies, refer to the requirements.txt file in the project root.
-Project Structure
+
+**Project Structure
 
 ml_app: Contains core application logic (views.py)
 project_settings: Django configuration files
