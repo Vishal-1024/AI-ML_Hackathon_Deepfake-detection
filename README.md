@@ -26,7 +26,7 @@ Django >= v3.0
 
 ### Prerequisite
 1. Copy your trained model to the models folder.
-   - You can download our trained models from the [Google Drive](https://drive.google.com/drive/folders/1UX8jXUXyEjhLLZ38tcgOwGsZ6XFSLDJ-?usp=sharing) or you can train your models using the steps mentioned in Model Creation directory.
+   
 
 #### Step 1 : Clone the repo and Navigate to Django Application
 
@@ -57,6 +57,4 @@ Django >= v3.0
 
 `python manage.py runserver`
 
-<p align="center">
-  <img src="https://github.com/abhijitjadhav1998/Deepfake_detection_using_deep_learning/blob/master/github_assets/fakegif.gif" />
-</p>  
+ 
