@@ -1,60 +1,49 @@
-# Deep fake detection Django Application
-## Requirements:
+Deep Fake Detection Django Application
+System Requirements
 
-**Note :** Nvidia GPU is mandatory to run the application.
-- CUDA version >= 10.0 for GPU
-- GPU Compute Capability > 3.0 
+NVIDIA GPU (required)
+CUDA version 10.0 or higher
+GPU Compute Capability > 3.0
+Python 3.6+
+Django 3.0+
 
+For a complete list of dependencies, refer to the requirements.txt file in the project root.
+Project Structure
 
-You can find the list of requirements in the requirement.txt
+ml_app: Contains core application logic (views.py)
+project_settings: Django configuration files
+static: CSS, JavaScript, and JSON assets (including face-api files)
+templates: HTML template files
 
-```
-Python >= v3.6
-Django >= v3.0
-```
+Before running the application, create the following directories in the project root:
 
-## Directory Structure
+models
+uploaded_images
+uploaded_videos
 
-- ml_app -> Directory containing code in views.py file
-- project_settings -> Contains Django settings and files to run in production
-- static -> Contains all css, js and json files (for face-api)
-- templates -> Template files for HTML
+Ensure you have the necessary permissions to access these directories.
+Local Setup and Deployment
 
-<b>Note:</b> Before running the project make sure you have created directories namely <strong>models, uploaded_images, uploaded_videos</strong> in the project root and that you have proper permissions to access them.
+Clone the repository:
+Copygit clone [your-repository-url]
 
-# Running application locally on your machine
+Navigate to the Django application directory.
+(Optional) Create and activate a virtual environment:
+Copypython -m venv venv
+source venv/bin/activate  # On Windows, use: venv\Scripts\activate
 
-### Prerequisite
-1. Copy your trained model to the models folder.
-   
+Install required packages:
+Copypip install -r requirements.txt
 
-#### Step 1 : Clone the repo and Navigate to Django Application
+Place your trained model in the models directory.
 
-`git clone https://github.com/https://github.com/Vishal-1024/AI-ML_Hackathon_Deepfake-detection.git`
-
-#### Step 2: Create virtualenv (optional)
-
-`python -m venv venv`
-
-#### Step 3: Activate virtualenv (optional)
-
-`venv\Scripts\activate`
-
-#### Step 4: Install requirements
-
-`pip install -r requirements.txt`
-
-#### Step 5: Copy Models
-
-`Copy your trained model to the models folder i.e Django Application/models/`
-
-- You can download our trained models from our google drive [https://drive.google.com/drive/folders/1yDsQ3YFTTD0n9Efk6eyTJ2a_zq3_fYq1?usp=sharing]
-
-**Note :** The model name must be in specified format only i.e *model_84_acc_10_frames_final_data.pt*. Make sure that no of frames must be mentioned after certain 3 underscores `_` , in the above example the model is for 10 frames.
+The model filename should follow this format: model_[accuracy]_acc_[num_frames]_frames_final_data.pt
+Example: model_84_acc_10_frames_final_data.pt (for a 10-frame model)
 
 
-### Step 6: Run project
+Start the Django development server:
+Copypython manage.py runserver
 
-`python manage.py runserver`
 
- 
+After completing these steps, the application should be running locally on your machine.
+Note: This application requires significant computational resources. Ensure your system meets the hardware requirements before attempting to run it.
