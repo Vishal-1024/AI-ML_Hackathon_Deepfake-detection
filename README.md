@@ -48,7 +48,7 @@ Django >= v3.0
 
 `Copy your trained model to the models folder i.e Django Application/models/`
 
-- You can download our trained models from our repository .../models/
+- You can download our trained models from our google drive [https://drive.google.com/drive/folders/1yDsQ3YFTTD0n9Efk6eyTJ2a_zq3_fYq1?usp=sharing]
 
 **Note :** The model name must be in specified format only i.e *model_84_acc_10_frames_final_data.pt*. Make sure that no of frames must be mentioned after certain 3 underscores `_` , in the above example the model is for 10 frames.
 
