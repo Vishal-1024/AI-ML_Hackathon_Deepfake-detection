@@ -27,7 +27,7 @@ Local Setup and Deployment
 
 ##Clone the repository:##
 
-Navigate to the Django application directory.
+In to the application directory.
 
 Create and activate a virtual environment(Optional):
 
